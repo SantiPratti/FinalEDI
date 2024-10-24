@@ -72,13 +72,14 @@ header {
   transition: padding 0.4s ease;
 }
 
-.contacto {
+#contacto {
   margin-left: auto;
   background: #6A9AB0;
   border-radius: 20px;
+  padding: 0 10px;
 }
 
-.contacto:hover {
+#contacto:hover {
   background: #001F3F;
 }
 
@@ -89,16 +90,25 @@ header {
   margin: 20px 0;
 }
 
-/*Menu Hamburguesa*/
 .hamburguesa {
   display: none;
   font-size: 30px;
   color: white;
   cursor: pointer;
 }
+
+/* Ocultar el checkbox */
 .menu-toggle {
   display: none;
 }
+
+/* Menú */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 /*Fin del header*/
 
@@ -244,30 +254,52 @@ footer {
 
 /*Portrait*/
 @media (max-width: 575.98px)and (orientation:portrait) {
-
+  /* Mostrar el ícono del menú hamburguesa */
   .hamburguesa {
     display: block;
+    position: absolute; /* Hacemos que la hamburguesa flote */
+    left: 350px; /* Alineamos a la derecha del header */
+    top: 15px; /* Ajusta la altura del ícono dentro del header */
   }
 
-  /* Ocultar menú por defecto */
+  /* Ocultar menú inicialmente */
   .menu {
     display: none;
-  }
-
-  .menu-center a, .contacto{
-    padding: 0;
-    text-align: center;
-  }
-
-  /* Mostrar el menú cuando el checkbox está marcado */
-  .menu-toggle:checked + .hamburguesa + .menu {
+    flex-direction: column;
     background-color: #001F3F;
     position: absolute;
     top: 94px;
     left: 0;
     width: 100%;
+  }
+
+  /* Mostrar menú al hacer click en el ícono */
+  .menu-toggle:checked + .hamburguesa + .menu {
     display: flex;
   }
+
+  /* Alinear elementos en una columna */
+  .menu-center {
+    display: flex;
+    flex-direction: column; /* Apilar verticalmente */
+  }
+
+  .menu-center a {
+    padding: 15px;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  /* Asegurarse que "Contacto" esté alineado como los otros */
+  .contacto {
+    border: none;
+    background: none;
+    margin-left: 0;
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid white;
+  }
+
   header {
     width: 100%;
     padding: 10px;
