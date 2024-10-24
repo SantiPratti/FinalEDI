@@ -89,6 +89,17 @@ header {
   margin: 20px 0;
 }
 
+/*Menu Hamburguesa*/
+.hamburguesa {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.menu-toggle {
+  display: none;
+}
+
 /*Fin del header*/
 
 /* tarjetas */
@@ -230,20 +241,39 @@ footer {
   padding: 20px;
 }
 
+
 /*Portrait*/
 @media (max-width: 575.98px)and (orientation:portrait) {
 
+  .hamburguesa {
+    display: block;
+  }
+
+  /* Ocultar menú por defecto */
+  .menu {
+    display: none;
+  }
+
+  .menu-center a, .contacto{
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Mostrar el menú cuando el checkbox está marcado */
+  .menu-toggle:checked + .hamburguesa + .menu {
+    background-color: #001F3F;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
   header {
     width: 100%;
     padding: 10px;
   }
   .logo1 {
     display: none;
-  }
-
-  .text-center:hover {
-    padding: 0 0px !important;
-    transition: none !important;
   }
 
   .event-item {
