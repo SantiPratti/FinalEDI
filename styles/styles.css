@@ -18,7 +18,7 @@ html, body {
   min-height: 100vh;
 }
 
-/* Ajuste del header */
+/* Inicio del header */
 header {
   display: flex;
   align-items: center;
@@ -28,7 +28,6 @@ header {
   padding: 0 20px;
   position: sticky;
   top: 0;
-  z-index: 10;
 }
 
 .logo {
@@ -70,6 +69,7 @@ header {
 
 .text-center:hover {
   padding: 0 80px;
+  transition: padding 0.4s ease;
 }
 
 .contacto {
@@ -89,14 +89,16 @@ header {
   margin: 20px 0;
 }
 
-/* Sección de eventos */
+/*Fin del header*/
+
+/* tarjetas */
 .event-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding-top: 20px;
   height: auto;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -226,5 +228,47 @@ footer {
 
 .contact-content {
   padding: 20px;
+}
+
+/*Portrait*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+
+  header {
+    width: 100%;
+    padding: 10px;
+  }
+  .logo1 {
+    display: none;
+  }
+
+  .text-center:hover {
+    padding: 0 0px !important;
+    transition: none !important;
+  }
+
+  .event-item {
+    display: grid;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    width: 95%;
+
+  }
+  .event-title {
+    /* arriba | derecha | abajo | izquierda */
+    padding-left: 10px;
+  }
+
+  .event-description {
+    padding: 10px;
+  }
+
+  .event-image {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
