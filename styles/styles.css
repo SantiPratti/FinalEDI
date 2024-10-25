@@ -167,14 +167,15 @@ hr {
 
 /* Contenedor para centrar el formulario */
 .form-container {
+  top: 0;
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
-  min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
 }
 
 /* Formulario */
 form {
+  top: 0;
   display: flex; 
   flex-direction: column; /* Organiza los elementos en columna */
   align-items: center; /* Centra horizontalmente los elementos del formulario */
@@ -257,9 +258,9 @@ footer {
 @media (max-width: 575.98px) {
   /* Mostrar el ícono del menú hamburguesa */
   .hamburguesa {
-    display: flex;
+    display: block;
     position: absolute; /* Hacemos que la hamburguesa flote */
-    left: 350px; /* Alineamos a la derecha del header */
+    left: 80%; /* Alineamos a la derecha del header */
     top: 15px; /* Ajusta la altura del ícono dentro del header */
   }
 
