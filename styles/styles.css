@@ -256,7 +256,7 @@ footer {
 @media (max-width: 575.98px) {
   /* Mostrar el ícono del menú hamburguesa */
   .hamburguesa {
-    display: block;
+    display: flex;
     position: absolute; /* Hacemos que la hamburguesa flote */
     left: 350px; /* Alineamos a la derecha del header */
     top: 15px; /* Ajusta la altura del ícono dentro del header */
