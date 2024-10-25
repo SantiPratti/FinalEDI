@@ -253,7 +253,7 @@ footer {
 
 
 /*Portrait*/
-@media (max-width: 575.98px)and (orientation:portrait) {
+@media (max-width: 575.98px) {
   /* Mostrar el ícono del menú hamburguesa */
   .hamburguesa {
     display: block;
