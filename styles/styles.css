@@ -292,24 +292,11 @@ footer {
     width: 100%;
   }
 
-  /* Asegurarse que "Contacto" esté alineado como los otros */
-  .contacto {
-    border: none;
-    background: none;
-    margin-left: 0;
-    color: white;
-    padding: 15px;
-    border-bottom: 1px solid white;
-  }
 
   header {
     width: 100%;
     padding: 10px;
   }
-  .logo1 {
-    display: none;
-  }
-
   .event-item {
     display: grid;
     background-color: #2c2c2c;
