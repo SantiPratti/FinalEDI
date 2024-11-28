@@ -360,10 +360,7 @@ footer {
     width: 100%;
     height: auto;
   }
-
-}
-
-header, 
+  header, 
 .menu, 
 .menu-center a, 
 .hamburguesa, 
@@ -371,3 +368,5 @@ header,
   transition: none !important; /* Desactiva transiciones */
   animation: none !important; /* Desactiva animaciones */
 }
+}
+
