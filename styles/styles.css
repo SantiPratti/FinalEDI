@@ -356,3 +356,11 @@ footer {
 
 }
 
+header, 
+.menu, 
+.menu-center a, 
+.hamburguesa, 
+.text-center {
+  transition: none !important; /* Desactiva transiciones */
+  animation: none !important; /* Desactiva animaciones */
+}
