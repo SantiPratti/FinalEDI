@@ -193,6 +193,7 @@ hr {
   
 }
 
+
 /* Contenedor para centrar el formulario */
 .form-container {
   top: 0;
@@ -200,6 +201,7 @@ hr {
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
 }
+
 
 /* Formulario */
 form {
