@@ -342,7 +342,14 @@ footer {
     /* arriba | derecha | abajo | izquierda */
     padding-left: 10px;
   }
-
+  .event-date {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left; /* Asegura la alineación a la izquierda */
+    margin: 0; /* Elimina márgenes indeseados */
+    padding: 10px;
+  }
 
  
   .event-description {
