@@ -19,6 +19,7 @@ html, body {
   min-height: 100vh;
 }
 
+
 /* Inicio del header */
 header {
   display: flex;
@@ -73,16 +74,6 @@ header {
   transition: padding 0.4s ease;
 }
 
-#contacto {
-  margin-left: auto;
-  background: #6A9AB0;
-  border-radius: 20px;
-  padding: 0 10px;
-}
-
-#contacto:hover {
-  background: #001F3F;
-}
 
 .recientes {
   text-align: center;
@@ -165,7 +156,14 @@ header {
   object-fit: cover;
 }
 
+.mailto {
+  color: #0159b1;
+  text-decoration: none;
+}
 
+.mailto:hover {
+  text-decoration: underline;
+}
 
 .event-content {
   padding: 20px;
@@ -285,7 +283,7 @@ footer {
 }
 
 
-/*Portrait*/
+/*Movil*/
 @media (max-width: 575.98px) {
   /* Mostrar el ícono del menú hamburguesa */
   .hamburguesa {
@@ -351,6 +349,8 @@ footer {
     padding: 10px;
   }
 
+
+
  
   .event-description {
     padding: 10px;
@@ -368,5 +368,6 @@ footer {
   transition: none !important; /* Desactiva transiciones */
   animation: none !important; /* Desactiva animaciones */
 }
+
 }
 
