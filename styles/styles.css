@@ -69,10 +69,6 @@ header {
   transition: 0.4s;
 }
 
-.text-center:hover {
-  padding: 0 80px;
-  transition: padding 0.4s ease;
-}
 
 
 .recientes {
@@ -291,8 +287,6 @@ footer {
 }
 
 
-
-
 /*Movil*/
 @media (max-width: 575.98px) {
   /* Mostrar el ícono del menú hamburguesa */
@@ -332,6 +326,7 @@ footer {
   }
 
 
+
   header {
     width: 100%;
     padding: 10px;
@@ -360,7 +355,6 @@ footer {
   }
 
 
-
  
   .event-description {
     padding: 10px;
@@ -370,14 +364,6 @@ footer {
     width: 100%;
     height: auto;
   }
-  header, 
-.menu, 
-.menu-center a, 
-.hamburguesa, 
-.text-center {
-  transition: none !important; /* Desactiva transiciones */
-  animation: none !important; /* Desactiva animaciones */
-}
+
 
 }
-
