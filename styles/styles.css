@@ -282,6 +282,16 @@ footer {
   padding: 20px;
 }
 
+/*Media query para que solo se aplique la animacion del header en desktop*/
+@media (min-width: 576px) {
+  .text-center:hover {
+    padding: 0 80px;
+    transition: padding 0.4s ease;
+  }
+}
+
+
+
 
 /*Movil*/
 @media (max-width: 575.98px) {
